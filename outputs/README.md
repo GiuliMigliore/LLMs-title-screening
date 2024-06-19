@@ -49,6 +49,8 @@ In contrast, if the objective is to maximize the number of correctly excluded pa
 [Wang et al. (2020)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6959565/) investigated human error rates, comprising both false exclusions and false inclusions, during the screening process of systematic reviews. Their study revealed that, depending on the question type, the average human error rate was 10.76%. 
 In the preliminary phase of the current study, calculating the model's error rate is not pertinent; instead, it is crucial to prioritize having more false inclusions while ensuring zero false exclusions. This approach aims to minimize the likelihood of type II errors, which involve erroneously excluding potentially relevant papers. However, it is important to note that humans are also prone to type II errors, as illustrated in the diagram below.
 
+![Error diagram](https://github.com/GiuliMigliore/LLMs-title-exclusion/assets/154629511/7d412104-5777-4b11-967d-b219f4ad61e5)
+
 In the current study, the model's labels were compared to human labels assigned by multiple reviewers collaboratively, as detailed in the "data" folder of the current repository. Consequently, the human error within the two calibration sets is already minimized.
 
 However, there are no published studies that report the type II error rates of humans in paper screening for systematic reviews. Therefore, there is no benchmark to determine whether the type II error rate of the LLM aligns with human error rates or if humans perform better.
