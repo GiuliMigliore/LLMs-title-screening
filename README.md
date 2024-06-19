@@ -7,9 +7,17 @@ When researchers have to write a systematic review or meta-analysis, they need t
 
 These two steps ultimately narrow down the selection to the most relevant studies for the review.
 
-It has been demonstrated in the literature that a titles-first screening strategy can be highly effective for systematic reviews, discarding a big portion of irrelevant papers early, reducing the amount of abstracts to read later.
+It has been demonstrated in the literature that a titles-first screening strategy can be highly effective for systematic reviews, discarding a big portion of irrelevant papers early, reducing the amount of abstracts to read later. 
 
 The inclusion and exclusion criteria used for title screening are pretty straightforward, meaning that this process can potentially be automated. Large Language Models (LLMs) could be the ideal automated assistants for screening titles. 
+
+This way there would be three phases:
+
+- title screening (automated)
+
+- abstract screening (human input)
+
+- full-text screening (human input)
 
 ## Objectives
 This paper has two primary objectives: first, to compare various prompt techniques and identify the one that elicits the most effective results from the LLM; second, to evaluate the performance of the LLM against simpler classifiers to determine if the LLM more effectively filters out irrelevant papers compared to simpler statistical methods. 
