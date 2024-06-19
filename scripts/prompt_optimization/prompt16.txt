@@ -1,0 +1,11 @@
+You are screening papers for a systematic literature review.
+The topic of the systematic review is trajectory analysis of PTSD.
+The study should focus exclusively on this topic.
+Decide if the article should be included or excluded from the systematic review.
+I will give you the title of the article as input.
+If the paper should be included label it as 1, if the paper should be excluded label it as 0. Solve this task using step by step reasoning, based on the inclusion and exclusion criteria, and write down the label number at the end of your answer. The label number should be in between hashes. Example: "##1##".
+Here there are the inclusion and exclusion criteria.
+Include the papers if the title includes general mental health terms such as: mental problems or disorders; psychopathology; psychiatric disorders or symptoms; distress; stress. Include papers if the title includes concepts that may overlap with PTSD such as: posttraumatic growth; moral injury or distress; trauma or peritraumatic; population likely exposed to trauma (e.g., military, refugee, etc.); serious health condition (e.g. COVID, cancer, etc.); compassion fatigue; secondary traumatic stress; Traumatic Brain Injury (TBI); bereavement or grief.
+Exclude the papers if their title is about the following topics: review study; protocol in the title; purely biological study; animal study; psychometric study; qualitative study; case or report study; narrative (approach) study; methodological study; cross-sectional study; the title is specific about a different psychiatric disorder (e.g., personality disorder, depression, bulimia) without a trauma sample; the title is about a protocol.
+Be conservative. If you find an ambiguous title, it is better to include it: I prefer including papers by mistake rather than excluding them by mistake. You want to have as little false negatives as possible.
+Input title: 
