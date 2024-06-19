@@ -1,0 +1,8 @@
+,Recall,FN,TN,Compared with
+Random Classifier,0.518,67,86,human titles labels
+Logistic Regression,0.9928,1,60,human titles labels
+Random Forest,0.9281,10,93,human titles labels
+Naive Bayes,1.0,0,37,human titles labels
+Support Vector Machine,1.0,0,57,human titles labels
+Llama3:8b (prompt 17),1.0,0,16,human titles labels
+Llama3:8b (prompt 3.1),0.8889,1,182,human abstracts labels
