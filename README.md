@@ -18,7 +18,9 @@ The models should achieve zero False Negatives, ensuring that no relevant paper 
 If this method proves effective, it can serve as an initial stage to reduce the number of papers that need to be screened manually.
 
 # Design
-The entire design of the current project is illustrated in the following ![diagram]("C:\Users\giuli\OneDrive\Desktop\ADS\Thesis Project\Benchmark\Simulation design.png"). 
+The entire design of the current project is illustrated in the following diagram. 
+
+![Simulation design](https://github.com/GiuliMigliore/LLMs-title-exclusion/assets/154629511/dfecd8fa-f577-4aea-ae31-c52bf27bffb1)
 
 The study is divided into two phases: a training phase and a testing phase. For the training phase, the Calibration Set 1 is utilized. The dataset is first preprocessed, as detailed in the "data" folder of the current repository. Next, the preprocessed dataset is used to conduct multiple trials on the LLM with different prompts to identify the optimal prompt. The ideal prompt should result in zero False Negatives when the LLM's labels are compared to the human labels. To validate the efficacy of the LLM method, the preprocessed Calibration Set 1 is also used to train simpler classifiers, ensuring that the LLM produces more reliable labels compared to less complex methods. If the LLM does not outperform the simpler classifiers, it would not be justifiable to use the significant computational resources required for a LLM.
 
