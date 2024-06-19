@@ -1,6 +1,8 @@
 # Prompt optimization
 A pipeline is created to test the different prompts.
 
+![run_prompt function](https://github.com/GiuliMigliore/LLMs-title-exclusion/assets/154629511/ce3a4966-6420-42f2-88eb-510d898b429d)
+
 First, the text file with the prompt is loaded. Then, the prompt is run on the LLM for each title in the dataset, and the model's response is added to the output dataset. For reproducible results, the model’s temperature hyperparameter is set to 0 and the seed to 42.
 The newly labeled dataset is then saved as an excel file and the time needed to produce the response is generated in tokens per second (token/s). 
 The process is repeated for each attempted prompt.
