@@ -1,4 +1,8 @@
 # The application of LLM prompt engineering to optimize title screening 
+
+A code repository for:
+>The application of LLM prompt engineering to optimize title screening
+
 When researchers have to write a systematic review or meta-analysis, they need to search in detail for relevant papers to ensure a comprehensive overview. After deciding on the review question, researchers must systematically search for all relevant literature. They then proceed through two main phases: 
 
 - title-abstract screening, where irrelevant papers are excluded
@@ -45,3 +49,19 @@ The [Ollama API](https://github.com/ollama/ollama/blob/main/docs/api.md) is used
 
 Vectorization is not necessary for Llama, since the model already vectorizes the text by itself.
 
+## Contents
+Folders:
+- `data` - A folder containing information about the data and the data preprocessing script.
+- `scripts` - A folder containing the scripts for the prompt optimization phase and the validation phase of this simulation study.
+- `outputs` - Contains information about the output and the final performance of all the model used during the simulation.
+
+## Licence
+The content in this repository is published under the MIT license.
+
+## Contact
+For any questions or remarks, please contact the corresponding author: 
+ 
+> Giulia Migliore: [@GiuliMigliore](https://github.com/GiuliMigliore)
+
+For questions regarding this repository, use the
+[issue](https://github.com/GiuliMigliore/LLMs-title-exclusion/issues) tab.
