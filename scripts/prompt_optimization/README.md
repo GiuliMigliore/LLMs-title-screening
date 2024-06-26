@@ -1,6 +1,8 @@
 # Prompt optimization
 A pipeline is created to test the different prompts.
 
+![run_prompt function](https://github.com/GiuliMigliore/LLMs-title-exclusion/assets/154629511/ce3a4966-6420-42f2-88eb-510d898b429d)
+
 First, the text file with the prompt is loaded. Then, the prompt is run on the LLM for each title in the dataset, and the model's response is added to the output dataset. For reproducible results, the model’s temperature hyperparameter is set to 0 and the seed to 42.
 The newly labeled dataset is then saved as an excel file and the time needed to produce the response is generated in tokens per second (token/s). 
 The process is repeated for each attempted prompt.
@@ -25,3 +27,4 @@ The [confusion matrix](https://scikit-learn.org/stable/auto_examples/model_selec
 [Recall](https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html) is a valuable metric when the cost of false negatives is high, even if it results in an increased number of false positives. The desired outcome is a recall of 1.00, which indicates the absence of false negatives, ensuring that no relevant title is incorrectly labeled as irrelevant. 
 
 Prompts with a recall of 1.00, indicating zero false negatives in the confusion matrix, are compared. Among these, the prompt with the highest true negative rate is identified as the optimal prompt.
+When a recall of 1.00 is reached, with zero false negatives displayed in the confusion matrix, the optimal prompt has been identified.
