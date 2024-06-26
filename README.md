@@ -1,4 +1,8 @@
 # The application of LLM prompt engineering to optimize title screening 
+
+A code repository for:
+>The application of LLM prompt engineering to optimize title screening
+
 When researchers have to write a systematic review or meta-analysis, they need to search in detail for relevant papers to ensure a comprehensive overview. After deciding on the review question, researchers must systematically search for all relevant literature. They then proceed through two main phases: 
 
 - title-abstract screening, where irrelevant papers are excluded
@@ -20,9 +24,9 @@ This way there would be three phases:
 - full-text screening (human input)
 
 ## Objectives
-This paper has two primary objectives: first, to compare various prompt techniques and identify the one that elicits the most effective results from the LLM; second, to evaluate the performance of the LLM against simpler classifiers to determine if the LLM more effectively filters out irrelevant papers compared to simpler statistical methods. 
+This project has two main objectives: first, to compare various prompt techniques and identify the one that elicits the most effective results from the LLM; second, to evaluate the performance of the LLM against simpler classifiers to determine if the LLM more effectively filters out irrelevant papers compared to simpler statistical methods. 
 
-The models should achieve zero False Negatives, ensuring that no relevant paper is excluded. False positives are acceptable at this point, as this is only the initial stage and all papers identified as relevant will undergo a secondary review that includes reading their abstracts. 
+The models should exclude a significant portion of papers, while ensuring that no relevant paper is excluded. False inclusions are acceptable at this point, as this is merely the initial stage. All papers identified as relevant will undergo a secondary review that includes reading their abstracts. 
 If this method proves effective, it can serve as an initial stage to reduce the number of papers that need to be screened manually.
 
 # Design
@@ -47,3 +51,29 @@ The [Ollama API](https://github.com/ollama/ollama/blob/main/docs/api.md) is used
 
 Vectorization is not necessary for Llama, since the model already vectorizes the text by itself.
 
+# Contents
+Folders:
+- `data` - A folder containing information about the data and the data preprocessing script.
+- `scripts` - A folder containing the scripts for the prompt optimization phase and the validation phase of this simulation study.
+- `outputs` - Contains information about the output and the final performance of all the model used during the simulation.
+
+# Licence
+The content in this repository is published under the MIT license.
+
+# Contact
+For any questions or remarks, please contact the corresponding author: 
+ 
+> Giulia Migliore: [@GiuliMigliore](https://github.com/GiuliMigliore)
+
+For questions regarding this repository, use the
+[issue](https://github.com/GiuliMigliore/LLMs-title-exclusion/issues) tab.
+
+# Acknowledgments
+
+We would like to thank the contributors to this project.
+
+First, [Rens van de Schoot](https://github.com/Rensvandeschoot) provided guidance and support throughout the course of this project. 
+
+Second, [Jelle Teijema](https://github.com/jteijema) gave insightful feedback and reflections on critical aspects of the project, which were instrumental in shaping this work.
+
+Third, Bruno Messina Coimbra assisted in crafting the step-by-step reasoning prompts. His detailed explanations of the reasoning behind specific labeling decisions in the human dataset were crucial in establishing a connection between the human and machine labeling processes.
