@@ -1,4 +1,4 @@
-# The application of LLM prompt engineering to optimize title screening 
+# LLMs for title screening 
 
 A code repository for:
 >The application of LLM prompt engineering to optimize title screening
